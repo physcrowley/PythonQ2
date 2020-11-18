@@ -7,9 +7,17 @@
 # 2020-11-17
 
 # ----------VOCABULAIRE-----------
-# déclaration
+# commentaire
+# déclaration (simple et composée)
+# mot-clé
 # bloc de code
 # indentation
-# commentaire
-# mot-clé
+# erreur de syntaxe
+# erreur d'exécution
+# erreur de logique
+
+#import keyword
+#print(keyword.kwlist)
+
+print("bonjour le monde")
 
