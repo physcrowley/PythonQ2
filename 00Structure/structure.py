@@ -16,8 +16,41 @@
 # erreur d'exécution
 # erreur de logique
 
-#import keyword
-#print(keyword.kwlist)
+import keyword
 
-print("bonjour le monde")
+
+
+## Python exécute les déclaration en ordre séquentielle
+
+print("bonjour") # chaque ligne en Python est une déclaration
+print("le")
+print("monde")
+
+# Blocs de code : déclarations composées
+#
+# STRUCTURE de la déclaration composée
+#
+# signature:
+#       bloc de code indenté
+#       toutes les lignes ont la même indentation
+#
+# SIGNATURE
+# <mot-clé> <condition>:
+
+
+# Exemple de déclaration composée (une boucle qui se répète 10 fois)
+for i in range(10):
+    print(i) # Le bloc de code doit être indenté
+
+# Essaye cette version sans indentation (enlevant les #)
+#for i in range(10):
+#print(i)
+
+
+# Mots-clés (reservés)
+#
+# for est un mot-clé
+# voici la liste complète :
+print(keyword.kwlist)
+#['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
