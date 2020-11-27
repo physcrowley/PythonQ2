@@ -47,3 +47,6 @@
 # lower(), upper() --> pour changer la case
 # ord(), chr() --> pour des caractères individuels
 #
+
+print(ord('o'))
+
