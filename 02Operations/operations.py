@@ -16,4 +16,7 @@
 #----------MANIPULATION DE TEXTE----------#
 #
 # lower(), upper()
+# ord(), chr()
 #
+
+print(ord('o'))
