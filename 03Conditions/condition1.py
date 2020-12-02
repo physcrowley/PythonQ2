@@ -33,14 +33,14 @@ if choix == "oui":
 print("rouge ou vert?")
 choix = input().lower()
 
-if choix == "rouge":
+if choix == "rouge": # cette condition est au même niveau que la 1e
     print("très festif")
 
 print("merci d'avoir joué")
 """
 
 # exemple de CASCADE de conditions
-
+#"""
 print("oui ou non?")
 choix = input().lower()
 
@@ -50,7 +50,8 @@ if choix == "oui":
     print("rouge ou vert?")
     choix = input().lower()
 
-    if choix == "rouge":
+    if choix == "rouge": # cette condition est indenté avec le code de la 1e condition
         print("très festif")
 
 print("merci d'avoir joué")
+#"""
