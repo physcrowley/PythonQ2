@@ -1,6 +1,6 @@
 # Exemples de boucles
-#
-#
+# David Crowley, crowlda@ecolecatholique.ca
+# 2020-12-08
 
 # C'est quoi une boucle?
 #

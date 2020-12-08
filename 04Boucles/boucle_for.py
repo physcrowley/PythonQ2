@@ -1,6 +1,6 @@
 # Plus sur la boucle for
-#
-#
+# David Crowley, crowlda@ecolecatholique.ca
+# 2020-12-08
 
 #--------------FOR------------------
 #
