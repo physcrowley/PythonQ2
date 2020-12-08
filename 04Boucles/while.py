@@ -23,7 +23,7 @@
 #     # doit inclure une façon de quitter la boucle
 #
 
-# Exemple simple, infini
+# Exemple simple, infini (ERREUR)
 """ <-- début de commentaire multi-ligne
 while True:
     print("this is the song that never ends")
@@ -57,7 +57,7 @@ while repeat:
 """
 
 # Exemple - compter tous les nombres de 1 à 10
-
+"""
 num = 0
 somme = 0
 while num < 10 :
@@ -66,7 +66,7 @@ while num < 10 :
     num += 1 #= num + 1
     
 print(num, somme)
-
+"""
 
 
 #--------------FOR------------------
@@ -81,7 +81,7 @@ print(num, somme)
 #     # > variable_de_boucle < nombre
 #     # > variable_de_boucle = 0 pour commencer
 #
-
+"""
 somme = 0
 for num in range(10) :
     print(num, somme)
@@ -91,3 +91,4 @@ for num in range(10) :
 print(num, somme)
 
 print("fin")
+"""
