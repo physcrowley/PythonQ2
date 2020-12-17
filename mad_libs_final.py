@@ -64,7 +64,6 @@ def page_djc():
 
 
 def page_damian(): 
-
     phrases = []
     consignes = []
 
@@ -79,7 +78,6 @@ def page_damian():
 
 
 def page_david():
-
     phrases = []
     consignes = []
 
@@ -197,6 +195,7 @@ cahier = [page_djc, page_damian, page_david, page_joseph, page_nicholas, page_sa
 
 
 #-----Une fonction pour saisir le choix de menu---------
+
 # Former le texte complet du message d'accueil 
 accueil  = f"Il y a {len(cahier)} pages dans ce cahier 'Mad Libs' fait par les élèves ICS3U.\n"
 accueil += f"> Indiquer un nombre entre 1 et {len(cahier)} pour choisir une page à faire.\n"
