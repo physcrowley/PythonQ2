@@ -1,3 +1,6 @@
+# conçu pour que la liste `cahier` soit importé par mad_libs_final.py
+# qui utilise toutes ces listes de phrases et de consignes
+
 #------Une fonction par "page" d'un cahier Mad Libs------
 
 def page_djc():
