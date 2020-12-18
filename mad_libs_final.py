@@ -8,11 +8,12 @@ import os # pour effacer la console
 # Lancer le programme pour faire des Mad Libs
 #
 # 2020-12-16, modifié 2020-12-18
+# David Crowley, crowlda@ecoelcatholique.ca
 #
 
 #------Une fonction par "page" d'un cahier Mad Libs------
 #
-# > Voir la ligne 202 pour le début du programme qui les utilisent
+# > Voir la ligne 197 pour le début du programme qui les utilisent
 
 def page_djc():
     """Page de M. Crowley""" 
