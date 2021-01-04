@@ -13,7 +13,7 @@ import os # pour effacer la console
 
 #------Une fonction par "page" d'un cahier Mad Libs------
 #
-# > Voir la ligne 197 pour le début du programme qui les utilisent
+# > Voir la ligne 198 pour le début du programme qui les utilisent
 
 def page_djc():
     """Page de M. Crowley""" 
@@ -202,9 +202,9 @@ cahier = [page_djc, page_damian, page_david, page_joseph, page_nicholas, page_sa
 #-----Une fonction pour saisir le choix de menu---------
 
 # Former le texte complet du message d'accueil 
-accueil  = f"Il y a {len(cahier)} pages dans ce cahier 'Mad Libs' fait par les élèves ICS3U.\n"
+accueil  = f"Il y a {len(cahier)} pages dans ce cahier 'Mad Libs' fait par les élèves ICS3U.\n\n"
 accueil += f"> Indiquer un nombre entre 1 et {len(cahier)} pour choisir une page à faire.\n"
-accueil +=  "> Sinon, taper la lettre Q pour quitter le programme."
+accueil +=  "> Sinon, taper la lettre Q pour quitter le programme.\n"
     # noter la façon plus directe de formatter le texte : f"...{valeur}..."
 
 # J'aurais pu utiliser une boucle `while` pour saisir la valeur de la page à l'intérieur
@@ -242,6 +242,10 @@ def get_choice(pages_faites):
 fait = {} # ensemble ('set') vide... mais aussi un dictionnaire ('dict') vide
 
 while True:
+    # Effacer la console
+    os.system('clear') # utiliser avec bash (Linux [incluant repl.it] et MacOS)
+    #os.system('cls') # utiliser avec command prompt (Windows)
+    
     # obtenir la page à faire (ou le choix de quitter)
     page = get_choice(fait)
 
@@ -287,7 +291,3 @@ while True:
     # Attendre avant la prochaine boucle
     print("Taper sur Enter pour continuer...")
     input() # attendre
-
-    # Effacer la console
-    os.system('clear') # utiliser avec bash (Linux [incluant repl.it] et MacOS)
-    #os.system('cls') # utiliser avec command prompt (Windows)
