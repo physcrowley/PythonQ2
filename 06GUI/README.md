@@ -11,6 +11,8 @@ Pour tous les exemples et projets que nous développions dans ce cours nous fero
 
 Il n'y a aucune installation explicite à faire. Vous devez simplement lancer le [programme test](pgzero_test.py) à partir d'un nouveau dossier de projet dans votre espace de travail, et le serveur de repl.it s'occupera d'ajouter les modules nécessaires à ton espace de travail.
 
+> ⚠ Si `pgzero`n'est pas installé automatiquement, tu peux manuellement lancer la commande `pip install pgzero` ou `python -m pip install pgzero` à la console. En théorie, tu n'auras qu'à le faire une fois, et repl.it se rappelera de l'installation pour les prochaines fois. Par contre, ne soyez pas surpris si repl.it prend quelques minutes à chaque nouvelle session pour rendre les fichiers nécessaires disponibles à ton projet - c'est normal pour l'opération via son serveur.
+
 ### Sur ordinateur
 
 > Cette option est **fortement recommandée** si vous avez un ordinateur Windows/Mac/Linux car les projets Pygame sont plus demandant sur le serveur de repl.it et le font planter plus souvent que d'habitude.
