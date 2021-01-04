@@ -1,2 +1,2 @@
 language = "python3"
-run = "python 06GUI/pgzero_test.py"
+run = "python 06GUI/turtle_test.py"
