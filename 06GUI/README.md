@@ -9,7 +9,7 @@ Pour tous les exemples et projets que nous développions dans ce cours nous fero
 
 ### Sur Repl.it
 
-Il n'y a aucune installation explicite à faire. Vous devez simplement lancer le programme test dans la section suivante à partir d'un nouveau dossier de projet dans votre espace de travail, et le serveur de repl.it s'occupera d'ajouter les modules nécessaires à ton espace de travail.
+Il n'y a aucune installation explicite à faire. Vous devez simplement lancer le [programme test](pgzero_test.py) à partir d'un nouveau dossier de projet dans votre espace de travail, et le serveur de repl.it s'occupera d'ajouter les modules nécessaires à ton espace de travail.
 
 ### Sur ordinateur
 
@@ -20,7 +20,7 @@ Il n'y a aucune installation explicite à faire. Vous devez simplement lancer le
 1. Ouvrir la console **en tant qu'administrateur** (menu Windows > taper `cmd.` > choisir "Exécuter en tant qu'administrateur")
 2. Taper la commande `pip install pgzero` ou `python -m pip install pgzero`
 
-> ⚠ Si vous n'ouvrez pas la console en tant qu'administrateur, Pygame Zero ne sera pas installé dans le même dossier que Python (il sera installé dans ton dossier utilisateur) et pourrait ne pas fonctionner avec VS Code.`
+> ⚠ Si vous n'ouvrez pas la console en tant qu'administrateur, Pygame Zero ne sera pas installé dans le même dossier que Python (il sera installé dans ton dossier utilisateur) et pourrait ne pas fonctionner avec VS Code.
 
 ## Test de l'installation
 
