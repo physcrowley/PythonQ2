@@ -13,7 +13,7 @@ import os # pour effacer la console
 
 #------Une fonction par "page" d'un cahier Mad Libs------
 #
-# > Voir la ligne 198 pour le début du programme qui les utilisent
+# > Voir la ligne 216 pour le début du programme qui les utilisent
 
 def page_djc():
     """Page de M. Crowley""" 
@@ -186,6 +186,24 @@ def page_samir():
     return phrases, consignes
 
 
+def page_mariana():
+    phrases = []
+    consignes = []
+
+    phrases.append("Apres que je me suis {} pour la journée")
+    consignes.append("verbe")
+    phrases.append("J'ai {} le sapin de Noel avec ma famille.")
+    consignes.append("nom commun")
+    phrases.append("Ensuite on est {} faire des biscuits de noel")
+    consignes.append("verbe aller au passé parfait")
+    phrases.append("On a aussi regarder un {} de noel!")
+    consignes.append("nom masculin")
+    phrases.append("J'ai enfin passé une belle {} avec ma famille")
+    consignes.append("nom féminin")
+
+    return phrases, consignes
+
+
 def page_():
     phrases = []
     consignes = []
@@ -196,7 +214,7 @@ def page_():
 
 
 #----Regrouper toutes les "pages" dans une liste cahier----
-cahier = [page_djc, page_damian, page_david, page_joseph, page_nicholas, page_samir]
+cahier = [page_djc, page_damian, page_david, page_joseph, page_nicholas, page_samir, page_mariana]
 
 
 #-----Une fonction pour saisir le choix de menu---------
