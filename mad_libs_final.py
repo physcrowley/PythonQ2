@@ -1,4 +1,4 @@
-import os # pour effacer la console
+import os  # pour effacer la console
 
 # Jeu Mad Libs
 #
@@ -15,8 +15,9 @@ import os # pour effacer la console
 #
 # > Voir la ligne 216 pour le début du programme qui les utilisent
 
+
 def page_djc():
-    """Page de M. Crowley""" 
+    """Page de M. Crowley"""
 
     phrases = []
     consignes = []
@@ -52,7 +53,7 @@ def page_djc():
 
     phrases.append("Le(la) {}")
     consignes.append("toujours le même véhicule")
-    
+
     phrases.append("{} au milieu du canal.")
     consignes.append("verbe de mouvement, 3e pers. singulier")
 
@@ -61,14 +62,13 @@ def page_djc():
 
     phrases.append("crient <<Quel(le) {}!>>.")
     consignes.append("activité, singulier")
-    
 
     # les listes de phrases et de consignes sont locales à cette fonction
     # les exporter vers le programme avec le mot-clé return
     return phrases, consignes
 
 
-def page_damian(): 
+def page_damian():
     phrases = []
     consignes = []
 
@@ -87,17 +87,30 @@ def page_david():
     consignes = []
 
     phrases.append("{} fait des biscuits le jour de la veille de Noël.")
-    consignes.append("nom d'une femelle dans ta famille (mère,soeur,enfant...):")
+    consignes.append(
+        "nom d'une femelle dans ta famille (mère,soeur,enfant...):")
     phrases.append("Elle utilise un {} pour déchiqueter la pâte.")
     consignes.append("outil de la cuisine, nom masculin:")
-    phrases.append("Une fois qu'elle a fini de la mettre en pièce, elle a mis les morceaux de la pâte dans le four. Après que les biscuits étaient cuits, elle les a placé sur une {}.")
+    phrases.append(
+        "Une fois qu'elle a fini de la mettre en pièce, elle a mis les morceaux de la pâte dans le four. Après que les biscuits étaient cuits, elle les a placé sur une {}."
+    )
     consignes.append("nom féminin d'un objet qui peut soutenir des choses.")
-    phrases.append("À minuit, Père Noël a réveillé tout le monde quand il a {} avec un très grand bruit.")
-    consignes.append("verbe écrit au participe passé et s'accorde avec l'auxiliaire avoir:")
-    phrases.append("Les enfants ont reconnu qui les a réveillé, alors ils sont allés voir le Père Noël. Ils l'ont demandé pour des {}.")
-    consignes.append("nom commun au pluriel(masculin ou féminin) qui désigne un objet:")
-    phrases.append("Le Père Noël a accepté leurs demandes, tout pendant qu'il mangeait des biscuits. Il leur a aussi remercié pour les biscuits en leur donnant des {}.")    
-    consignes.append("nom commun au pluriel(masculin ou féminin) qui désigne un objet autre que celui de ci-haut:")
+    phrases.append(
+        "À minuit, Père Noël a réveillé tout le monde quand il a {} avec un très grand bruit."
+    )
+    consignes.append(
+        "verbe écrit au participe passé et s'accorde avec l'auxiliaire avoir:")
+    phrases.append(
+        "Les enfants ont reconnu qui les a réveillé, alors ils sont allés voir le Père Noël. Ils l'ont demandé pour des {}."
+    )
+    consignes.append(
+        "nom commun au pluriel(masculin ou féminin) qui désigne un objet:")
+    phrases.append(
+        "Le Père Noël a accepté leurs demandes, tout pendant qu'il mangeait des biscuits. Il leur a aussi remercié pour les biscuits en leur donnant des {}."
+    )
+    consignes.append(
+        "nom commun au pluriel(masculin ou féminin) qui désigne un objet autre que celui de ci-haut:"
+    )
 
     return phrases, consignes
 
@@ -112,11 +125,14 @@ def page_joseph():
     consignes.append("professionnel, masculin")
     phrases.append("il m'a dit de prendre des {} pour ma douleur")
     consignes.append("nom commun")
-    phrases.append("Dans le matin, j'ai demander a {} de me faire une petit collation.")
+    phrases.append(
+        "Dans le matin, j'ai demander a {} de me faire une petit collation.")
     consignes.append("(ma) nom commun feminin")
     phrases.append("Mon père a crier apres moi et il m'a {}.")
     consignes.append("Verbe à l'infinitif")
-    phrases.append("Il y a plusieurs {} facon de demander de faire ma collation tous seul.")
+    phrases.append(
+        "Il y a plusieurs {} facon de demander de faire ma collation tous seul."
+    )
     consignes.append("Adjectif")
     phrases.append("mon père n'est pas come d'autre {}.")
     consignes.append("nom commun")
@@ -124,7 +140,8 @@ def page_joseph():
     consignes.append("Adverbe")
     phrases.append("Mais, je l'{}.")
     consignes.append("verbe")
-    phrases.append("Mes {} on rit de moi après quils on vuent le gros bump sur ma tete")
+    phrases.append(
+        "Mes {} on rit de moi après quils on vuent le gros bump sur ma tete")
     consignes.append("Nom commun")
     phrases.append(" j'ai {}.")
     consignes.append("Verbe à l'infinitif")
@@ -208,104 +225,116 @@ def page_():
     phrases = []
     consignes = []
 
-
-
     return phrases, consignes
 
 
 #----Regrouper toutes les "pages" dans une liste cahier----
-cahier = [page_djc, page_damian, page_david, page_joseph, page_nicholas, page_samir, page_mariana]
-
+cahier = [
+    page_djc, 
+    page_damian, 
+    page_david, 
+    page_joseph, 
+    page_nicholas, 
+    page_samir,
+    page_mariana
+]
 
 #-----Une fonction pour saisir le choix de menu---------
 
-# Former le texte complet du message d'accueil 
-accueil  = f"Il y a {len(cahier)} pages dans ce cahier 'Mad Libs' fait par les élèves ICS3U.\n\n"
+# Former le texte complet du message d'accueil
+accueil = f"Il y a {len(cahier)} pages dans ce cahier 'Mad Libs' fait par les élèves ICS3U.\n\n"
 accueil += f"> Indiquer un nombre entre 1 et {len(cahier)} pour choisir une page à faire.\n"
-accueil +=  "> Sinon, taper la lettre Q pour quitter le programme.\n"
-    # noter la façon plus directe de formatter le texte : f"...{valeur}..."
+accueil += "> Sinon, taper la lettre Q pour quitter le programme.\n"
+
+# noter la façon plus directe de formatter le texte : f"...{valeur}..."
+
 
 # J'aurais pu utiliser une boucle `while` pour saisir la valeur de la page à l'intérieur
 # de la boucle du jeu, mais je préfère les fonctions récursives comme celle-ci.
 def get_choice(pages_faites):
     # messages
     print(accueil)
-    print(f"\t Rappel : Vous avez déjà fait les pages suivantes : {pages_faites}")
-    
+    print(
+        f"\t Rappel : Vous avez déjà fait les pages suivantes : {pages_faites}"
+    )
+
     # réponse
     choix = input()
-    print() # ligne vide
+    print()  # ligne vide
 
     # traitement de la réponse
     if choix.isdigit():
         choix = int(choix)
-        if choix > 0 and choix <= len(cahier) : # une page valide
-            return choix 
+        if choix > 0 and choix <= len(cahier):  # une page valide
+            return choix
         else:
             print("Ce numéro de page n'est pas valide.")
-            return get_choice(pages_faites) # répéter la fonction (récursivité)
-    
-    elif choix.lower() == 'q': # quitter
+            return get_choice(
+                pages_faites)  # répéter la fonction (récursivité)
+
+    elif choix.lower() == 'q':  # quitter
         print("Merci d'avoir joué. Au revoir!")
-        return -1 # page impossible -> signale de quitter la boucle du jeu
-    
+        return -1  # page impossible -> signale de quitter la boucle du jeu
+
     else:
         print("Ce choix n'est pas une option valide.")
-        return get_choice(pages_faites) # répéter la fonction (récursivité)
+        return get_choice(pages_faites)  # répéter la fonction (récursivité)
 
 
 #------Boucle du jeu--------
 
 # se rappeler des choix antérieurs
-fait = {} # ensemble ('set') vide... mais aussi un dictionnaire ('dict') vide
+fait = {}  # ensemble ('set') vide... mais aussi un dictionnaire ('dict') vide
 
 while True:
     # Effacer la console
-    os.system('clear') # utiliser avec bash (Linux [incluant repl.it] et MacOS)
+    os.system(
+        'clear')  # utiliser avec bash (Linux [incluant repl.it] et MacOS)
     #os.system('cls') # utiliser avec command prompt (Windows)
-    
+
     # obtenir la page à faire (ou le choix de quitter)
     page = get_choice(fait)
 
     # traitement du choix
-    if page <= 0 : break # quitter la boucle
+    if page <= 0: break  # quitter la boucle
 
-    else: # ajouter la page à l'ensemble des pages faits
+    else:  # ajouter la page à l'ensemble des pages faits
 
         # {} est interprété comme un 'dict' vide, alors il faut le convertir à un 'set'
         if len(fait) == 0: fait = set(fait)
-        
+
         # dans tous les cas ...
-        fait.add(page) 
+        fait.add(page)
 
     # obtenir les phrases et les consignes de la page choisie
     phrases_a_montrer, consignes_a_montrer = cahier[page - 1]()
-        # page - 1 : convertir entre 1e page = 1 à 1e élément = 0
-        # cahier[page - 1] retourne la fonction (les commandes) pour la page. 
-        # ajouter les () exécute la fonction et assigne les deux listes
+    # page - 1 : convertir entre 1e page = 1 à 1e élément = 0
+    # cahier[page - 1] retourne la fonction (les commandes) pour la page.
+    # ajouter les () exécute la fonction et assigne les deux listes
 
     # Obtenir les réponses de l'utilisateur
-    mots = [] # liste vide
-    n = 1 # 1e mot
-    for c in consignes_a_montrer: # pour chaque consigne c...
+    mots = []  # liste vide
+    n = 1  # 1e mot
+    for c in consignes_a_montrer:  # pour chaque consigne c...
         print(f"{n}-Taper ce type de mot : {c}")
-            # les valeurs entre {} seront insérés dans le texte
-        
-        mots.append(input()) # ajouter le mot entré à la liste
-        
-        n += 1 # monter le nombre de mots saisis pour signaler le progrès
+        # les valeurs entre {} seront insérés dans le texte
+
+        mots.append(input())  # ajouter le mot entré à la liste
+
+        n += 1  # monter le nombre de mots saisis pour signaler le progrès
 
     # Afficher le résultat
     print("Taper sur Enter pour voir le résultat...")
-    input() # attendre
+    input()  # attendre
 
     print("---début---\n")
-    for i in range(len(phrases_a_montrer)): # pour chaque phrase à l'index i...
+    for i in range(
+            len(phrases_a_montrer)):  # pour chaque phrase à l'index i...
         print(phrases_a_montrer[i].format(mots[i]))
-            # print() utilise la méthode .format() qui remplace les {}
-            # dans la phrase avec le mot dans le .format()
+        # print() utilise la méthode .format() qui remplace les {}
+        # dans la phrase avec le mot dans le .format()
     print("\n---fin---\n")
 
     # Attendre avant la prochaine boucle
     print("Taper sur Enter pour continuer...")
-    input() # attendre
+    input()  # attendre
