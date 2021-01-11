@@ -19,5 +19,6 @@ def update():
     alien.x = alien.x + speed
 
 pgzrun.go()
-# go() lance le programmme Pygame Zero qui va appeler les 
+# go() lance le programmme Pygame Zero qui utilise les 
 # fonctions qu'on a définit ici, comme draw() et update()
+# dans une boucle qui se répète jusqu'à 60 fois par seconde
