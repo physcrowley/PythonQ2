@@ -6,7 +6,8 @@ HEIGHT = 200
 # Sprite
 alien = Actor("alien.png")
 alien.pos = (0, HEIGHT / 2)
-v_a = 1 # vitesse de l'alien
+vx_a = 2 # vitesse x de l'alien
+vy_a = 1 # vitesse y de l'alien
 
 
 def draw():
@@ -16,7 +17,15 @@ def draw():
 
 def update():
     """Changer des choses entre chaque mise à jour de la fenêtre"""
-    alien.x = alien.x + v_a
+    global vx_a, vy_a
+    
+    if (alien.x < 0 or alien.x > WIDTH):
+        vx_a = -vx_a # change la direction
+    if (alien.y < 0 or alien.y > HEIGHT):
+        vy_a = -vy_a
+    
+    alien.x += vx_a
+    alien.y += vy_a
 
 pgzrun.go()
 # go() lance le programmme Pygame Zero qui utilise les 
