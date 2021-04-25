@@ -1,6 +1,6 @@
 # Exemples et notes
 
-Ce site inclut les exemples de code qui sont développés en classe. (test de CR)
+Ce site inclut les exemples de code qui sont développés en classe.
 
 ## Structure de dossiers
 
